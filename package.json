@@ -6,7 +6,9 @@
   "scripts": {
     "start": "gulp"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-cached": "^1.1.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
