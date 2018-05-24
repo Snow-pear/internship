@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>数据目录</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="images/LOGO.png" alt="">
-                <h1>中医大数据开放平台</h1>
-            </div>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="images/LOGO.png" alt="">
+            <h1>中医大数据开放平台</h1>
+        </div>
         <div class="top-nav">
-            <ul class="navs">
+            <ul>
                 <li>
-                    首页<br>
+                    首页
+                    <br>
                     <span>Home</span>
                 </li>
                 <li>
-                    数据<br>
-                    <span>Data</span>
+                    数据
+                    <br>
+                    <span class="text">Data</span>
                 </li>
                 <li>
-                    开放统计<br>
-                    <span>Open statistics</span>
+                    开放统计
+                    <br>
+                    <span class="text">Open statistics</span>
                 </li>
                 <li>
-                    联系我们<br>
-                    <span>Contact Us</span>
+                    联系我们
+                    <br>
+                    <span class="text">Contact Us</span>
                 </li>
             </ul>
         </div>
@@ -39,6 +44,7 @@
             <input type="button" class="register-btn" value="注册">
         </div>
     </div>
+
     <div class="page-header">
         <ul class="mian-nav">
             <li>数据样本</li>
@@ -46,12 +52,74 @@
             <li>热点数据</li>
         </ul>
     </div>
-    <div class="sectoin">
+    <div class="section">
         <div class="section-left">
-            <h3>医院</h3>
-            <ul></ul>
+            <div class="hospital">
+                <h3>医院</h3>
+                <hr class="first-line">
+                <input type="button" class="region" value="&nbsp;&nbsp;地区&nbsp;&nbsp;">
+                <select id="hospitalGradeSelect" class="hospital-grade-select" value="医院等级">
+                    <option value="医院等级">&nbsp;&nbsp;医院等级&nbsp;&nbsp;</option>
+                </select>
+                <br>
+                <input type="button" class="hs" value="&nbsp;&nbsp;医院&nbsp;&nbsp;"> &nbsp;&nbsp;
+                <input type="button" class="department" value="&nbsp;&nbsp;科室&nbsp;&nbsp;">
+                <br>
+                <input type="button" class="doctor" value="&nbsp;&nbsp;医生&nbsp;&nbsp;">
+            </div>
+
+            <div class="disease">
+                <h3>病症</h3>
+                <hr class="first-line">
+                <select id="diseaseSelect" class="disease-select">
+                    <option value="&nbsp;&nbsp;疾病&nbsp;&nbsp;">疾病</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;
+                <input type="button" class="syndrome-type" value="&nbsp;&nbsp;证型&nbsp;&nbsp;">
+            </div>
+
+            <div class="patient">
+                <h3>患者</h3>
+                <hr class="first-line">
+                <input type="button" class="sex" value="&nbsp;&nbsp;性别&nbsp;&nbsp;"> &nbsp;
+                <input type="button" class="classification" value="&nbsp;&nbsp;人群分类&nbsp;&nbsp;">
+                <br>
+                <input type="button" class="age" value="&nbsp;&nbsp;年龄&nbsp;&nbsp;">
+            </div>
+
+            <div class="others">
+                <h3>其他</h3>
+                <hr class="first-line">
+                <input type="button" class="up-time" value="上传时间">
+                <input type="button" class="quality" value="疾病质量">
+            </div>
         </div>
-    </div>
+        <div class="section-right">
+            <div class="record">
+                <span class="doctor-number">医生编号：XXXXX</span>
+                <span class="case-num">病案数量：1546</span>
+                <img src="images/下载.png" alt="">
+            </div>
+            <hr class="second-line">
+            <div class="record">
+                <span class="doctor-number">医生编号：XXXXX</span>
+                <span class="case-num">病案数量：1546</span>
+                <img src="images/下载.png" alt="">
+            </div>
+            <hr class="second-line">
+            <div class="record">
+                <span class="doctor-number">医生编号：XXXXX</span>
+                <span class="case-num">病案数量：1546</span>
+                <img src="images/下载.png" alt="">
+            </div>
+            <hr class="second-line">
+            <div class="record">
+                <span class="doctor-number">医生编号：XXXXX</span>
+                <span class="case-num">病案数量：1546</span>
+                <img src="images/下载.png" alt="">
+            </div>
+            <hr class="second-line">
+        </div>
 </body>
 
 </html>
